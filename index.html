@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For Savanna ♡</title>
 
 <style>
+
+/* =========================
+   BASIC
+========================= */
 
 *{
     margin:0;
@@ -16,44 +22,11 @@
 }
 
 body{
-    font-family: Georgia, "Times New Roman", serif;
+    font-family:Georgia, "Times New Roman", serif;
     background:#f7efe7;
     color:#4d3732;
     overflow-x:hidden;
 }
-
-/* NAVIGATION */
-
-nav{
-    position:fixed;
-    top:20px;
-    left:50%;
-    transform:translateX(-50%);
-    width:min(90%,900px);
-    padding:14px 25px;
-    background:rgba(255,250,245,.9);
-    backdrop-filter:blur(12px);
-    border:1px solid #ead8ce;
-    border-radius:50px;
-    display:flex;
-    justify-content:center;
-    gap:28px;
-    z-index:1000;
-    box-shadow:0 8px 30px rgba(100,60,50,.1);
-}
-
-nav a{
-    text-decoration:none;
-    color:#76534c;
-    font-size:14px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#c47c8a;
-}
-
-/* GENERAL */
 
 section{
     padding:110px 8%;
@@ -70,21 +43,69 @@ section{
 
 .section-subtitle{
     text-align:center;
-    max-width:650px;
+    max-width:700px;
     margin:0 auto 60px;
     line-height:1.8;
     color:#896e67;
 }
 
-/* HERO */
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:min(92%,900px);
+
+    padding:14px 25px;
+
+    background:rgba(255,250,245,.92);
+    backdrop-filter:blur(12px);
+
+    border:1px solid #ead8ce;
+    border-radius:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:28px;
+
+    z-index:1000;
+
+    box-shadow:0 8px 30px rgba(100,60,50,.1);
+}
+
+nav a{
+    text-decoration:none;
+    color:#76534c;
+    font-size:14px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c47c8a;
+}
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
     min-height:100vh;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     text-align:center;
+
     position:relative;
+
     padding-top:120px;
 }
 
@@ -124,61 +145,143 @@ section{
     color:#a88880;
 }
 
-/* NOTE */
+
+/* =========================
+   LETTER
+========================= */
 
 .note-section{
     background:#fffaf6;
     border-radius:30px;
+
     margin:80px auto;
+
     box-shadow:0 20px 60px rgba(100,60,50,.08);
 }
 
 .note{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
+
     background:#fffdfb;
+
     padding:60px;
+
     border:1px solid #eadbd3;
+
     box-shadow:0 15px 40px rgba(90,50,40,.08);
+
     position:relative;
 }
 
 .note:before{
     content:"";
+
     position:absolute;
+
     top:18px;
     left:50%;
-    width:70px;
+
+    width:100px;
     height:18px;
+
     background:#e8b8bd;
+
     transform:translateX(-50%) rotate(-2deg);
+
     opacity:.7;
 }
 
 .note p{
     font-size:20px;
     line-height:2;
-    white-space:pre-line;
 }
 
-/* PHOTOS */
 
-.photos-section{
-    padding-top:130px;
+/* =========================
+   OUR SONG
+========================= */
+
+.song-section{
+    text-align:center;
 }
+
+.song-card{
+    max-width:650px;
+
+    margin:auto;
+
+    padding:60px 30px;
+
+    background:#fffaf6;
+
+    border:1px solid #eadbd3;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(90,50,40,.1);
+}
+
+.song-icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.song-card h2{
+    font-size:42px;
+    font-weight:normal;
+    margin:10px 0;
+}
+
+.song-card p{
+    color:#896e67;
+    margin-bottom:30px;
+}
+
+.song-button{
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#c5868e;
+    color:white;
+
+    padding:16px 32px;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.song-button:hover{
+    transform:translateY(-4px);
+    background:#a96973;
+}
+
+
+/* =========================
+   PHOTOS
+========================= */
 
 .photo-grid{
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
+
     gap:45px;
+
     max-width:1000px;
+
     margin:auto;
 }
 
 .polaroid{
     background:white;
+
     padding:16px 16px 30px;
+
     box-shadow:0 15px 35px rgba(80,50,40,.15);
+
     transition:.4s;
 }
 
@@ -204,122 +307,175 @@ section{
 
 .polaroid:hover{
     transform:rotate(0deg) translateY(-10px);
-    box-shadow:0 25px 50px rgba(80,50,40,.2);
+
+    box-shadow:
+        0 25px 50px rgba(80,50,40,.2);
 }
 
 .polaroid img{
     width:100%;
     height:380px;
+
     object-fit:cover;
+
     display:block;
 }
 
 .caption{
     text-align:center;
+
     padding-top:20px;
+
     font-size:17px;
+
     color:#72534c;
 }
 
-/* MEMORY CARDS */
+
+/* =========================
+   MEMORIES
+========================= */
 
 .memory-grid{
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
+
     gap:25px;
 }
 
 .memory-card{
     background:#fffaf6;
+
     border:1px solid #eadbd3;
+
     padding:35px 25px;
+
     border-radius:20px;
+
     transition:.3s;
 }
 
 .memory-card:hover{
     transform:translateY(-7px);
-    box-shadow:0 15px 35px rgba(90,50,40,.1);
+
+    box-shadow:
+        0 15px 35px rgba(90,50,40,.1);
 }
 
 .memory-number{
     font-size:14px;
+
     letter-spacing:2px;
+
     color:#bd8089;
+
     margin-bottom:20px;
 }
 
 .memory-card h3{
     font-size:23px;
+
     margin-bottom:15px;
 }
 
 .memory-card p{
     line-height:1.8;
+
     color:#806860;
 }
 
-/* TIMELINE */
+
+/* =========================
+   TIMELINE
+========================= */
 
 .timeline{
     max-width:800px;
+
     margin:auto;
+
     position:relative;
 }
 
 .timeline:before{
     content:"";
+
     position:absolute;
+
     left:20px;
     top:0;
     bottom:0;
+
     width:2px;
+
     background:#e4c9c2;
 }
 
 .timeline-item{
     position:relative;
+
     padding-left:65px;
+
     margin-bottom:55px;
 }
 
 .timeline-dot{
     position:absolute;
+
     left:11px;
     top:4px;
+
     width:20px;
     height:20px;
+
     border-radius:50%;
+
     background:#c98b94;
+
     border:5px solid #f7efe7;
 }
 
 .timeline-item h3{
     font-size:22px;
+
     margin-bottom:10px;
 }
 
 .timeline-item p{
     line-height:1.8;
+
     color:#806860;
 }
 
-/* LITTLE THINGS */
+
+/* =========================
+   LITTLE THINGS
+========================= */
 
 .little-things{
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
+
     gap:20px;
+
     max-width:800px;
+
     margin:auto;
 }
 
 .thing{
     background:#fffaf6;
+
     padding:25px;
+
     border-radius:18px;
+
     border:1px solid #eadbd3;
+
     font-size:18px;
+
     transition:.3s;
 }
 
@@ -329,122 +485,184 @@ section{
 
 .heart{
     color:#c27b86;
+
     margin-right:10px;
 }
 
-/* QUOTE */
+
+/* =========================
+   QUOTE
+========================= */
 
 .quote-section{
     text-align:center;
+
     background:#6b4942;
+
     color:white;
+
     max-width:none;
+
     margin-top:100px;
+
     margin-bottom:0;
 }
 
 .quote{
     max-width:800px;
+
     margin:auto;
+
     font-size:34px;
+
     line-height:1.6;
+
     font-style:italic;
 }
 
 .quote-small{
     margin-top:25px;
+
     opacity:.7;
+
     letter-spacing:2px;
 }
 
-/* HIDDEN MESSAGE */
+
+/* =========================
+   HIDDEN MESSAGE
+========================= */
 
 .message-box{
     text-align:center;
+
     max-width:700px;
+
     margin:auto;
 }
 
 .message-button{
     border:none;
+
     background:#c5868e;
+
     color:white;
+
     padding:16px 35px;
+
     border-radius:50px;
+
     font-family:inherit;
+
     font-size:16px;
+
     cursor:pointer;
+
     transition:.3s;
 }
 
 .message-button:hover{
     background:#a96973;
+
     transform:translateY(-3px);
 }
 
 .hidden-message{
     max-height:0;
+
     overflow:hidden;
+
     transition:1s ease;
 }
 
 .hidden-message.open{
-    max-height:400px;
+    max-height:500px;
+
     margin-top:35px;
 }
 
 .hidden-message p{
     background:#fffaf6;
+
     padding:40px;
+
     border-radius:20px;
+
     line-height:2;
+
     border:1px solid #eadbd3;
 }
 
-/* FINAL */
+
+/* =========================
+   FINAL
+========================= */
 
 .final{
     text-align:center;
+
     padding:150px 8%;
 }
 
 .final h2{
     font-size:55px;
+
     font-weight:normal;
+
     margin-bottom:25px;
 }
 
 .final p{
     font-size:19px;
+
     color:#846861;
+
     line-height:1.8;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     text-align:center;
+
     padding:40px;
+
     background:#f0e1d8;
+
     color:#80645d;
+
     font-size:14px;
 }
 
-/* FLOATING HEARTS */
+
+/* =========================
+   FLOATING HEARTS
+========================= */
 
 .floating{
     position:fixed;
+
     pointer-events:none;
+
     font-size:18px;
+
     animation:floatUp 7s linear forwards;
+
     opacity:.6;
+
     z-index:0;
 }
 
 @keyframes floatUp{
 
     0%{
-        transform:translateY(0) rotate(0deg);
+        transform:
+            translateY(0)
+            rotate(0deg);
+
         opacity:0;
     }
 
@@ -453,31 +671,44 @@ footer{
     }
 
     100%{
-        transform:translateY(-100vh) rotate(360deg);
+        transform:
+            translateY(-100vh)
+            rotate(360deg);
+
         opacity:0;
     }
 
 }
 
-/* REVEAL */
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
 
 .reveal{
     opacity:0;
+
     transform:translateY(30px);
+
     transition:1s ease;
 }
 
 .reveal.show{
     opacity:1;
+
     transform:translateY(0);
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:800px){
 
     nav{
         gap:13px;
+
         padding:12px 15px;
     }
 
@@ -528,39 +759,53 @@ footer{
 }
 
 </style>
+
 </head>
+
 
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
 <a href="#home">Home</a>
-<a href="#message">Letter</a>
+
+<a href="#message">Reminder</a>
+
+<a href="#song">Song</a>
+
 <a href="#photos">Photos</a>
+
 <a href="#memories">Memories</a>
+
 <a href="#things">Little Things</a>
 
 </nav>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
 <div class="hero-content reveal">
 
 <div class="small-title">
-A little something for you
+i got bored baby
 </div>
 
-<h1>For Savanna ♡</h1>
+<h1>
+For Savanna ♡
+</h1>
 
 <p>
-Some people come into your life and somehow make ordinary moments
-feel a little more special.
+pros of having a Coding bf :)
 </p>
 
 <div class="scroll">
@@ -572,18 +817,21 @@ feel a little more special.
 </section>
 
 
-<!-- LETTER -->
+
+<!-- =========================
+     REMINDER
+========================= -->
 
 <section class="note-section" id="message">
 
 <div class="note reveal">
 
 <div class="small-title">
-A little letter
+A little reminder baby
 </div>
 
 <p>
-Babyyyy sabi ko sayo di ako magpapatalo e HAHAHAHA but aside all that I know that  we just had a small issue yesterday. I just wanna say how much i really love youuuuu and how much you mean to me :) I wish to be your future, your everything, and i wish we make more meaningful memories with each other and thats all. I LOVE YOUUU PO
+HELLOOOO BABYYYY i just wanted to tell you how much you mean to me through this small gesture and a way of saying of saying I LOVEE YOUUU and how much i miss you :( . i have been stalking your reposts ah, babyyy namann :( you know i love youuu so so so much and i only love YOU, ONLY MY BABY, Savanna Yoell. Take care of yourself po ah iba talaga pag Anemic e :(. I Love youuu to INFINITY AND BEYOND
 </p>
 
 </div>
@@ -591,9 +839,51 @@ Babyyyy sabi ko sayo di ako magpapatalo e HAHAHAHA but aside all that I know tha
 </section>
 
 
-<!-- PHOTOS -->
 
-<section class="photos-section" id="photos">
+<!-- =========================
+     OUR SONG
+========================= -->
+
+<section class="song-section" id="song">
+
+<div class="song-card reveal">
+
+<div class="song-icon">
+♫
+</div>
+
+<div class="small-title">
+our song
+</div>
+
+<h2>
+Bubbly ♡
+</h2>
+
+<p>
+Colbie Caillat
+</p>
+
+<a
+class="song-button"
+href="https://open.spotify.com/track/1lkvpmrCaXK8QtliFDcHBO"
+target="_blank"
+rel="noopener noreferrer"
+>
+🎵 Play our song ♡
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PHOTO GALLERY
+========================= -->
+
+<section id="photos">
 
 <div class="reveal">
 
@@ -602,8 +892,8 @@ Our Little Gallery
 </h2>
 
 <p class="section-subtitle">
-Five little snapshots, five little memories, and a reminder that
-the simple moments can sometimes mean the most.
+Five little pictures to keep in one place.
+Every picture gets its own little spot here.
 </p>
 
 </div>
@@ -614,7 +904,10 @@ the simple moments can sometimes mean the most.
 
 <div class="polaroid reveal">
 
-<img src="photo.1.jpg" alt="A special photo">
+<img
+src="photo.1.jpg"
+alt="Special photo 1"
+>
 
 <div class="caption">
 one of my favorites ♡
@@ -623,42 +916,58 @@ one of my favorites ♡
 </div>
 
 
+
 <div class="polaroid reveal">
 
-<img src="photo.2.jpg" alt="Another special photo">
+<img
+src="photo.2.jpg"
+alt="Special photo 2"
+>
 
 <div class="caption">
-another memory to keep ♡
+another memory ♡
 </div>
 
 </div>
+
 
 
 <div class="polaroid reveal">
 
-<img src="photo.3.jpg" alt="Another special photo">
+<img
+src="photo.3.jpg"
+alt="Special photo 3"
+>
 
 <div class="caption">
-another little memory ♡
+another little moment ♡
 </div>
 
 </div>
+
 
 
 <div class="polaroid reveal">
 
-<img src="photo.4.jpg" alt="Another special photo">
+<img
+src="photo.4.jpg"
+alt="Special photo 4"
+>
 
 <div class="caption">
-one more moment to remember ✨
+one more memory ✨
 </div>
 
 </div>
+
 
 
 <div class="polaroid reveal">
 
-<img src="photo.5.jpg" alt="Another special photo">
+<img
+src="photo.5.jpg"
+alt="Special photo 5"
+>
 
 <div class="caption">
 and another one ♡
@@ -672,7 +981,10 @@ and another one ♡
 </section>
 
 
-<!-- MEMORIES -->
+
+<!-- =========================
+     MEMORIES
+========================= -->
 
 <section id="memories">
 
@@ -683,8 +995,7 @@ Little Memories
 </h2>
 
 <p class="section-subtitle">
-Not every memory needs to be some huge adventure.
-Sometimes the smallest moments stay with us the longest.
+The little moments are sometimes the ones worth remembering most.
 </p>
 
 </div>
@@ -699,7 +1010,9 @@ Sometimes the smallest moments stay with us the longest.
 01
 </div>
 
-<h3>The Random Conversations</h3>
+<h3>
+The Random Conversations
+</h3>
 
 <p>
 The conversations that start with absolutely nothing
@@ -709,20 +1022,24 @@ and somehow turn into hours of talking.
 </div>
 
 
+
 <div class="memory-card reveal">
 
 <div class="memory-number">
 02
 </div>
 
-<h3>The Laughs</h3>
+<h3>
+The Laughs
+</h3>
 
 <p>
-Those moments when something is so funny that neither
-of us can even properly explain why we're laughing.
+The random jokes and moments that somehow become
+way funnier than they should be.
 </p>
 
 </div>
+
 
 
 <div class="memory-card reveal">
@@ -731,11 +1048,13 @@ of us can even properly explain why we're laughing.
 03
 </div>
 
-<h3>The Quiet Moments</h3>
+<h3>
+The Little Moments
+</h3>
 
 <p>
-Even the simple moments where nothing special happens
-can still become memories worth keeping.
+The simple things that might seem small,
+but somehow end up meaning a lot.
 </p>
 
 </div>
@@ -746,7 +1065,10 @@ can still become memories worth keeping.
 </section>
 
 
-<!-- TIMELINE -->
+
+<!-- =========================
+     TIMELINE
+========================= -->
 
 <section>
 
@@ -757,7 +1079,7 @@ Our Story So Far
 </h2>
 
 <p class="section-subtitle">
-A tiny timeline of moments that matter.
+A tiny timeline of moments worth keeping.
 </p>
 
 </div>
@@ -770,51 +1092,61 @@ A tiny timeline of moments that matter.
 
 <div class="timeline-dot"></div>
 
-<h3>When We Started</h3>
+<h3>
+When We Started
+</h3>
 
 <p>
-Somehow, two people became part of each other's everyday life.
+Two people somehow became part of each other's everyday life.
 </p>
 
 </div>
+
 
 
 <div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<h3>The Moments In Between</h3>
+<h3>
+The Moments In Between
+</h3>
 
 <p>
-The conversations, jokes, little disagreements, laughs,
-and everything else that slowly became part of our story.
+The conversations, jokes, laughs, little disagreements,
+and everything else that became part of our story.
 </p>
 
 </div>
+
 
 
 <div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<h3>Right Now</h3>
+<h3>
+Right Now
+</h3>
 
 <p>
-We're still making memories, still learning about each other,
-and still adding new pages to the story.
+Still making memories and still adding new pages to the story.
 </p>
 
 </div>
+
 
 
 <div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<h3>What's Next</h3>
+<h3>
+What's Next
+</h3>
 
 <p>
-Hopefully, a whole lot more memories waiting to be made.
+Hopefully a whole lot more memories waiting to happen.
 </p>
 
 </div>
@@ -825,7 +1157,10 @@ Hopefully, a whole lot more memories waiting to be made.
 </section>
 
 
-<!-- LITTLE THINGS -->
+
+<!-- =========================
+     LITTLE THINGS
+========================= -->
 
 <section id="things">
 
@@ -836,7 +1171,7 @@ Little Things That Matter
 </h2>
 
 <p class="section-subtitle">
-It's usually the little things that make someone special.
+The little things are usually the things that stay with us.
 </p>
 
 </div>
@@ -898,7 +1233,10 @@ Simply having someone who matters
 </section>
 
 
-<!-- QUOTE -->
+
+<!-- =========================
+     QUOTE
+========================= -->
 
 <section class="quote-section">
 
@@ -908,7 +1246,7 @@ Simply having someone who matters
 are the moments we never planned.”
 
 <div class="quote-small">
-— for the memories
+for the memories ♡
 </div>
 
 </div>
@@ -916,7 +1254,10 @@ are the moments we never planned.”
 </section>
 
 
-<!-- HIDDEN MESSAGE -->
+
+<!-- =========================
+     HIDDEN MESSAGE
+========================= -->
 
 <section>
 
@@ -927,33 +1268,41 @@ One More Thing...
 </h2>
 
 <p class="section-subtitle">
-Okay, maybe there's one more message hidden here.
+Okay baby, there's one more thing hidden here.
 </p>
 
 
-<button class="message-button" onclick="openMessage()">
+<button
+class="message-button"
+onclick="openMessage()"
+>
 Open the message ♡
 </button>
 
 
-<div class="hidden-message" id="hiddenMessage">
+<div
+class="hidden-message"
+id="hiddenMessage"
+>
 
 <p>
-No matter how many pages this website has,
-the truth is pretty simple.
 
-You mean a lot to me.
+BABYYYY ♡
 
-I hope we keep laughing,
-keep talking,
-keep making memories,
-and keep choosing to appreciate
-the little things.
+<br><br>
 
-Here's to everything we've already experienced
-and everything still waiting for us.
+If you somehow made it all the way down here,
+then I guess you really read everything HAHAHA.
 
-♡
+<br><br>
+
+I hope this little website makes you smile,
+because I made it thinking about you.
+
+<br><br>
+
+I LOVE YOUUUU ♡
+
 </p>
 
 </div>
@@ -963,14 +1312,17 @@ and everything still waiting for us.
 </section>
 
 
-<!-- FINAL -->
+
+<!-- =========================
+     FINAL
+========================= -->
 
 <section class="final">
 
 <div class="reveal">
 
 <div class="small-title">
-The end... for now
+the end... for now
 </div>
 
 <h2>
@@ -978,8 +1330,7 @@ I Love You ♡
 </h2>
 
 <p>
-This website might have an ending,
-but the memories don't have to.
+I Love youuu to INFINITY AND BEYOND.
 </p>
 
 </div>
@@ -987,7 +1338,10 @@ but the memories don't have to.
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -996,9 +1350,12 @@ Made with ♡ for Savanna
 </footer>
 
 
+
 <script>
 
-/* HIDDEN MESSAGE */
+/* =========================
+   HIDDEN MESSAGE
+========================= */
 
 function openMessage(){
 
@@ -1010,7 +1367,9 @@ function openMessage(){
 }
 
 
-/* SCROLL REVEAL */
+/* =========================
+   SCROLL REVEAL
+========================= */
 
 const revealElements =
 document.querySelectorAll(".reveal");
@@ -1044,16 +1403,19 @@ element=>observer.observe(element)
 );
 
 
-/* FLOATING HEARTS */
+/* =========================
+   FLOATING HEARTS
+========================= */
 
 function createFloating(){
 
     const element =
     document.createElement("div");
 
-    element.className="floating";
+    element.className =
+    "floating";
 
-    const symbols=[
+    const symbols = [
         "♡",
         "♥",
         "✦",
@@ -1064,21 +1426,22 @@ function createFloating(){
     element.innerHTML =
     symbols[
         Math.floor(
-            Math.random()*symbols.length
+            Math.random() *
+            symbols.length
         )
     ];
 
     element.style.left =
-    Math.random()*100+"vw";
+    Math.random() * 100 + "vw";
 
     element.style.bottom =
     "-30px";
 
     element.style.animationDuration =
-    (5+Math.random()*5)+"s";
+    (5 + Math.random() * 5) + "s";
 
     element.style.fontSize =
-    (12+Math.random()*15)+"px";
+    (12 + Math.random() * 15) + "px";
 
     document.body.appendChild(element);
 
@@ -1100,4 +1463,5 @@ setInterval(
 
 
 </body>
+
 </html>
